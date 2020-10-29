@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79A427C120A28543F2F3BA24 /* Pods_ZikZok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAF5AB0887569EB2E73B76F /* Pods_ZikZok.framework */; };
+		A42B86D825457F21000FCEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B86D725457F21000FCEC6 /* AppDelegate.swift */; };
+		A42B86DA25457F21000FCEC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B86D925457F21000FCEC6 /* SceneDelegate.swift */; };
+		A42B86DC25457F21000FCEC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B86DB25457F21000FCEC6 /* ContentView.swift */; };
+		A42B86DE25457F22000FCEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B86DD25457F22000FCEC6 /* Assets.xcassets */; };
+		A42B86E125457F22000FCEC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B86E025457F22000FCEC6 /* Preview Assets.xcassets */; };
+		A42B86E425457F22000FCEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B86E225457F22000FCEC6 /* LaunchScreen.storyboard */; };
+		A42B86EF25457F22000FCEC6 /* ZikZokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B86EE25457F22000FCEC6 /* ZikZokTests.swift */; };
+		A42B86FA25457F22000FCEC6 /* ZikZokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B86F925457F22000FCEC6 /* ZikZokUITests.swift */; };
+		A49B66C8254AD58D005970A9 /* ParentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66C7254AD58D005970A9 /* ParentTabViewController.swift */; };
+		A49B66CA254AD72A005970A9 /* ZikZokHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66C9254AD72A005970A9 /* ZikZokHandler.swift */; };
+		A49B66D3254ADEE4005970A9 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66CD254ADEE4005970A9 /* LaunchPresenter.swift */; };
+		A49B66D4254ADEE4005970A9 /* LaunchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66CE254ADEE4005970A9 /* LaunchProtocols.swift */; };
+		A49B66D5254ADEE4005970A9 /* LaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66CF254ADEE4005970A9 /* LaunchInteractor.swift */; };
+		A49B66D6254ADEE4005970A9 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49B66D0254ADEE4005970A9 /* LaunchViewController.xib */; };
+		A49B66D7254ADEE4005970A9 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66D1254ADEE4005970A9 /* LaunchRouter.swift */; };
+		A49B66D8254ADEE4005970A9 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66D2254ADEE4005970A9 /* LaunchViewController.swift */; };
+		A49B66DB254AE054005970A9 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49B66D9254AE054005970A9 /* SplashView.xib */; };
+		A49B66DC254AE054005970A9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66DA254AE054005970A9 /* SplashView.swift */; };
+		A49B66DF254AE2DF005970A9 /* ZikZokAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66DE254AE2DF005970A9 /* ZikZokAPIHandler.swift */; };
+		A49B66E1254AE38A005970A9 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B66E0254AE38A005970A9 /* Events.swift */; };
+		A49F8D11254AB95200A8DB52 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F8D10254AB95200A8DB52 /* ContainerViewController.swift */; };
+		A4ACF6DB254AF824005FF517 /* PrivateFeedsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACF6DA254AF824005FF517 /* PrivateFeedsParser.swift */; };
+		A4CBD0D5254A9B8D0035E665 /* FeedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0D3254A9B8D0035E665 /* FeedPageViewController.swift */; };
+		A4CBD0D6254A9B8D0035E665 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0D4254A9B8D0035E665 /* FeedViewController.swift */; };
+		A4CBD0D9254A9C180035E665 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0D8254A9C180035E665 /* Feed.swift */; };
+		A4CBD0DD254A9CA90035E665 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0DC254A9CA90035E665 /* FeedViewModel.swift */; };
+		A4CBD0E1254A9DA30035E665 /* FeedPageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E0254A9DA30035E665 /* FeedPageAdapter.swift */; };
+		A4CBD0E4254AA0230035E665 /* FeedFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E3254AA0230035E665 /* FeedFetchService.swift */; };
+		A4CBD0EB254AA0440035E665 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E6254AA0440035E665 /* Constant.swift */; };
+		A4CBD0EC254AA0440035E665 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E7254AA0440035E665 /* Connection.swift */; };
+		A4CBD0ED254AA0440035E665 /* InteractionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E8254AA0440035E665 /* InteractionUtil.swift */; };
+		A4CBD0EE254AA0440035E665 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0E9254AA0440035E665 /* HTTPRequest.swift */; };
+		A4CBD0EF254AA0440035E665 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBD0EA254AA0440035E665 /* HTTPError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A42B86EB25457F22000FCEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B86CC25457F21000FCEC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B86D325457F21000FCEC6;
+			remoteInfo = ZikZok;
+		};
+		A42B86F625457F22000FCEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B86CC25457F21000FCEC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B86D325457F21000FCEC6;
+			remoteInfo = ZikZok;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		483B4F77F2FE4081041867FE /* Pods-ZikZok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZikZok.debug.xcconfig"; path = "Target Support Files/Pods-ZikZok/Pods-ZikZok.debug.xcconfig"; sourceTree = "<group>"; };
+		6346C448F7FC79C1A3444781 /* Pods-ZikZok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZikZok.release.xcconfig"; path = "Target Support Files/Pods-ZikZok/Pods-ZikZok.release.xcconfig"; sourceTree = "<group>"; };
+		A42B86D425457F21000FCEC6 /* ZikZok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZikZok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B86D725457F21000FCEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42B86D925457F21000FCEC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A42B86DB25457F21000FCEC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A42B86DD25457F22000FCEC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42B86E025457F22000FCEC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A42B86E325457F22000FCEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A42B86E525457F22000FCEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B86EA25457F22000FCEC6 /* ZikZokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZikZokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B86EE25457F22000FCEC6 /* ZikZokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikZokTests.swift; sourceTree = "<group>"; };
+		A42B86F025457F22000FCEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B86F525457F22000FCEC6 /* ZikZokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZikZokUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B86F925457F22000FCEC6 /* ZikZokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikZokUITests.swift; sourceTree = "<group>"; };
+		A42B86FB25457F22000FCEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49B66C7254AD58D005970A9 /* ParentTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentTabViewController.swift; sourceTree = "<group>"; };
+		A49B66C9254AD72A005970A9 /* ZikZokHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikZokHandler.swift; sourceTree = "<group>"; };
+		A49B66CD254ADEE4005970A9 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		A49B66CE254ADEE4005970A9 /* LaunchProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchProtocols.swift; sourceTree = "<group>"; };
+		A49B66CF254ADEE4005970A9 /* LaunchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
+		A49B66D0254ADEE4005970A9 /* LaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		A49B66D1254ADEE4005970A9 /* LaunchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		A49B66D2254ADEE4005970A9 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		A49B66D9254AE054005970A9 /* SplashView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
+		A49B66DA254AE054005970A9 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		A49B66DD254AE1D6005970A9 /* ZikZok-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZikZok-Bridging-Header.h"; sourceTree = "<group>"; };
+		A49B66DE254AE2DF005970A9 /* ZikZokAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikZokAPIHandler.swift; sourceTree = "<group>"; };
+		A49B66E0254AE38A005970A9 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		A49F8D10254AB95200A8DB52 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		A4ACF6DA254AF824005FF517 /* PrivateFeedsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateFeedsParser.swift; sourceTree = "<group>"; };
+		A4CBD0D3254A9B8D0035E665 /* FeedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPageViewController.swift; sourceTree = "<group>"; };
+		A4CBD0D4254A9B8D0035E665 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A4CBD0D8254A9C180035E665 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		A4CBD0DC254A9CA90035E665 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		A4CBD0E0254A9DA30035E665 /* FeedPageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPageAdapter.swift; sourceTree = "<group>"; };
+		A4CBD0E3254AA0230035E665 /* FeedFetchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetchService.swift; sourceTree = "<group>"; };
+		A4CBD0E6254AA0440035E665 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A4CBD0E7254AA0440035E665 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		A4CBD0E8254AA0440035E665 /* InteractionUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionUtil.swift; sourceTree = "<group>"; };
+		A4CBD0E9254AA0440035E665 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		A4CBD0EA254AA0440035E665 /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		AAAF5AB0887569EB2E73B76F /* Pods_ZikZok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZikZok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42B86D125457F21000FCEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A427C120A28543F2F3BA24 /* Pods_ZikZok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86E725457F22000FCEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86F225457F22000FCEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F53A18B76D43EFF78018D56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				483B4F77F2FE4081041867FE /* Pods-ZikZok.debug.xcconfig */,
+				6346C448F7FC79C1A3444781 /* Pods-ZikZok.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A5419D59300B31851CF773A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAAF5AB0887569EB2E73B76F /* Pods_ZikZok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A42B86CB25457F21000FCEC6 = {
+			isa = PBXGroup;
+			children = (
+				A42B86D625457F21000FCEC6 /* ZikZok */,
+				A42B86ED25457F22000FCEC6 /* ZikZokTests */,
+				A42B86F825457F22000FCEC6 /* ZikZokUITests */,
+				A42B86D525457F21000FCEC6 /* Products */,
+				0F53A18B76D43EFF78018D56 /* Pods */,
+				3A5419D59300B31851CF773A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A42B86D525457F21000FCEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42B86D425457F21000FCEC6 /* ZikZok.app */,
+				A42B86EA25457F22000FCEC6 /* ZikZokTests.xctest */,
+				A42B86F525457F22000FCEC6 /* ZikZokUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42B86D625457F21000FCEC6 /* ZikZok */ = {
+			isa = PBXGroup;
+			children = (
+				A49B66CB254ADB98005970A9 /* Login */,
+				A4CBD0E5254AA0440035E665 /* Util */,
+				A4CBD0E2254A9DDA0035E665 /* Services */,
+				A4CBD0D7254A9C180035E665 /* Model */,
+				A4CBD0D2254A9B7F0035E665 /* View */,
+				A42B86D725457F21000FCEC6 /* AppDelegate.swift */,
+				A42B86D925457F21000FCEC6 /* SceneDelegate.swift */,
+				A49F8D10254AB95200A8DB52 /* ContainerViewController.swift */,
+				A42B86DB25457F21000FCEC6 /* ContentView.swift */,
+				A42B86DD25457F22000FCEC6 /* Assets.xcassets */,
+				A42B86E225457F22000FCEC6 /* LaunchScreen.storyboard */,
+				A42B86E525457F22000FCEC6 /* Info.plist */,
+				A42B86DF25457F22000FCEC6 /* Preview Content */,
+			);
+			path = ZikZok;
+			sourceTree = "<group>";
+		};
+		A42B86DF25457F22000FCEC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A42B86E025457F22000FCEC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A42B86ED25457F22000FCEC6 /* ZikZokTests */ = {
+			isa = PBXGroup;
+			children = (
+				A42B86EE25457F22000FCEC6 /* ZikZokTests.swift */,
+				A42B86F025457F22000FCEC6 /* Info.plist */,
+			);
+			path = ZikZokTests;
+			sourceTree = "<group>";
+		};
+		A42B86F825457F22000FCEC6 /* ZikZokUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A42B86F925457F22000FCEC6 /* ZikZokUITests.swift */,
+				A42B86FB25457F22000FCEC6 /* Info.plist */,
+			);
+			path = ZikZokUITests;
+			sourceTree = "<group>";
+		};
+		A49B66CB254ADB98005970A9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A49B66E0254AE38A005970A9 /* Events.swift */,
+				A49B66CC254ADEE4005970A9 /* LaunchViewController */,
+				A49B66C9254AD72A005970A9 /* ZikZokHandler.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A49B66CC254ADEE4005970A9 /* LaunchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A49B66DD254AE1D6005970A9 /* ZikZok-Bridging-Header.h */,
+				A49B66DA254AE054005970A9 /* SplashView.swift */,
+				A49B66D9254AE054005970A9 /* SplashView.xib */,
+				A49B66CD254ADEE4005970A9 /* LaunchPresenter.swift */,
+				A49B66CE254ADEE4005970A9 /* LaunchProtocols.swift */,
+				A49B66CF254ADEE4005970A9 /* LaunchInteractor.swift */,
+				A49B66D0254ADEE4005970A9 /* LaunchViewController.xib */,
+				A49B66D1254ADEE4005970A9 /* LaunchRouter.swift */,
+				A49B66D2254ADEE4005970A9 /* LaunchViewController.swift */,
+			);
+			path = LaunchViewController;
+			sourceTree = "<group>";
+		};
+		A49F8D12254AC8F300A8DB52 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A49B66C7254AD58D005970A9 /* ParentTabViewController.swift */,
+			);
+			name = TabBarViewController;
+			sourceTree = "<group>";
+		};
+		A4CBD0D2254A9B7F0035E665 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A49F8D12254AC8F300A8DB52 /* TabBarViewController */,
+				A4CBD0DA254A9C200035E665 /* FeedViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4CBD0D7254A9C180035E665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0D8254A9C180035E665 /* Feed.swift */,
+				A4ACF6DA254AF824005FF517 /* PrivateFeedsParser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4CBD0DA254A9C200035E665 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0DF254A9D6B0035E665 /* Adapter */,
+				A4CBD0DE254A9D0B0035E665 /* ViewControllers */,
+				A4CBD0DB254A9C350035E665 /* ViewModel */,
+			);
+			name = FeedViewController;
+			sourceTree = "<group>";
+		};
+		A4CBD0DB254A9C350035E665 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0DC254A9CA90035E665 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4CBD0DE254A9D0B0035E665 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0D3254A9B8D0035E665 /* FeedPageViewController.swift */,
+				A4CBD0D4254A9B8D0035E665 /* FeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4CBD0DF254A9D6B0035E665 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0E0254A9DA30035E665 /* FeedPageAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A4CBD0E2254A9DDA0035E665 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0E3254AA0230035E665 /* FeedFetchService.swift */,
+				A49B66DE254AE2DF005970A9 /* ZikZokAPIHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4CBD0E5254AA0440035E665 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBD0E6254AA0440035E665 /* Constant.swift */,
+				A4CBD0E7254AA0440035E665 /* Connection.swift */,
+				A4CBD0E8254AA0440035E665 /* InteractionUtil.swift */,
+				A4CBD0E9254AA0440035E665 /* HTTPRequest.swift */,
+				A4CBD0EA254AA0440035E665 /* HTTPError.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42B86D325457F21000FCEC6 /* ZikZok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B86FE25457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZok" */;
+			buildPhases = (
+				4D060249BDF8F9C4093BD4DE /* [CP] Check Pods Manifest.lock */,
+				A42B86D025457F21000FCEC6 /* Sources */,
+				A42B86D125457F21000FCEC6 /* Frameworks */,
+				A42B86D225457F21000FCEC6 /* Resources */,
+				6EBBC286F8362B60E0D0AEF6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZikZok;
+			productName = ZikZok;
+			productReference = A42B86D425457F21000FCEC6 /* ZikZok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A42B86E925457F22000FCEC6 /* ZikZokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B870125457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZokTests" */;
+			buildPhases = (
+				A42B86E625457F22000FCEC6 /* Sources */,
+				A42B86E725457F22000FCEC6 /* Frameworks */,
+				A42B86E825457F22000FCEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B86EC25457F22000FCEC6 /* PBXTargetDependency */,
+			);
+			name = ZikZokTests;
+			productName = ZikZokTests;
+			productReference = A42B86EA25457F22000FCEC6 /* ZikZokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A42B86F425457F22000FCEC6 /* ZikZokUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B870425457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZokUITests" */;
+			buildPhases = (
+				A42B86F125457F22000FCEC6 /* Sources */,
+				A42B86F225457F22000FCEC6 /* Frameworks */,
+				A42B86F325457F22000FCEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B86F725457F22000FCEC6 /* PBXTargetDependency */,
+			);
+			name = ZikZokUITests;
+			productName = ZikZokUITests;
+			productReference = A42B86F525457F22000FCEC6 /* ZikZokUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42B86CC25457F21000FCEC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "temp-4400";
+				TargetAttributes = {
+					A42B86D325457F21000FCEC6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A42B86E925457F22000FCEC6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A42B86D325457F21000FCEC6;
+					};
+					A42B86F425457F22000FCEC6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A42B86D325457F21000FCEC6;
+					};
+				};
+			};
+			buildConfigurationList = A42B86CF25457F21000FCEC6 /* Build configuration list for PBXProject "ZikZok" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42B86CB25457F21000FCEC6;
+			productRefGroup = A42B86D525457F21000FCEC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42B86D325457F21000FCEC6 /* ZikZok */,
+				A42B86E925457F22000FCEC6 /* ZikZokTests */,
+				A42B86F425457F22000FCEC6 /* ZikZokUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42B86D225457F21000FCEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B86E425457F22000FCEC6 /* LaunchScreen.storyboard in Resources */,
+				A49B66DB254AE054005970A9 /* SplashView.xib in Resources */,
+				A42B86E125457F22000FCEC6 /* Preview Assets.xcassets in Resources */,
+				A42B86DE25457F22000FCEC6 /* Assets.xcassets in Resources */,
+				A49B66D6254ADEE4005970A9 /* LaunchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86E825457F22000FCEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86F325457F22000FCEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D060249BDF8F9C4093BD4DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZikZok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBBC286F8362B60E0D0AEF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZikZok/Pods-ZikZok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZikZok/Pods-ZikZok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZikZok/Pods-ZikZok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42B86D025457F21000FCEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49B66D7254ADEE4005970A9 /* LaunchRouter.swift in Sources */,
+				A4CBD0DD254A9CA90035E665 /* FeedViewModel.swift in Sources */,
+				A4CBD0EC254AA0440035E665 /* Connection.swift in Sources */,
+				A49B66CA254AD72A005970A9 /* ZikZokHandler.swift in Sources */,
+				A49B66E1254AE38A005970A9 /* Events.swift in Sources */,
+				A4CBD0EF254AA0440035E665 /* HTTPError.swift in Sources */,
+				A42B86D825457F21000FCEC6 /* AppDelegate.swift in Sources */,
+				A4CBD0EE254AA0440035E665 /* HTTPRequest.swift in Sources */,
+				A4CBD0E1254A9DA30035E665 /* FeedPageAdapter.swift in Sources */,
+				A49B66D4254ADEE4005970A9 /* LaunchProtocols.swift in Sources */,
+				A4CBD0D9254A9C180035E665 /* Feed.swift in Sources */,
+				A49F8D11254AB95200A8DB52 /* ContainerViewController.swift in Sources */,
+				A49B66C8254AD58D005970A9 /* ParentTabViewController.swift in Sources */,
+				A42B86DA25457F21000FCEC6 /* SceneDelegate.swift in Sources */,
+				A4ACF6DB254AF824005FF517 /* PrivateFeedsParser.swift in Sources */,
+				A4CBD0ED254AA0440035E665 /* InteractionUtil.swift in Sources */,
+				A4CBD0E4254AA0230035E665 /* FeedFetchService.swift in Sources */,
+				A4CBD0D6254A9B8D0035E665 /* FeedViewController.swift in Sources */,
+				A4CBD0EB254AA0440035E665 /* Constant.swift in Sources */,
+				A49B66DC254AE054005970A9 /* SplashView.swift in Sources */,
+				A49B66D3254ADEE4005970A9 /* LaunchPresenter.swift in Sources */,
+				A49B66DF254AE2DF005970A9 /* ZikZokAPIHandler.swift in Sources */,
+				A42B86DC25457F21000FCEC6 /* ContentView.swift in Sources */,
+				A49B66D8254ADEE4005970A9 /* LaunchViewController.swift in Sources */,
+				A4CBD0D5254A9B8D0035E665 /* FeedPageViewController.swift in Sources */,
+				A49B66D5254ADEE4005970A9 /* LaunchInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86E625457F22000FCEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B86EF25457F22000FCEC6 /* ZikZokTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B86F125457F22000FCEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B86FA25457F22000FCEC6 /* ZikZokUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A42B86EC25457F22000FCEC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B86D325457F21000FCEC6 /* ZikZok */;
+			targetProxy = A42B86EB25457F22000FCEC6 /* PBXContainerItemProxy */;
+		};
+		A42B86F725457F22000FCEC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B86D325457F21000FCEC6 /* ZikZok */;
+			targetProxy = A42B86F625457F22000FCEC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A42B86E225457F22000FCEC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B86E325457F22000FCEC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42B86FC25457F22000FCEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A42B86FD25457F22000FCEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A42B86FF25457F22000FCEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483B4F77F2FE4081041867FE /* Pods-ZikZok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZikZok/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZikZok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.cscreator.785;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/temp-4400/Desktop/ZikZok/ZikZok/LaunchViewController/ZikZok-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A42B870025457F22000FCEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6346C448F7FC79C1A3444781 /* Pods-ZikZok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZikZok/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZikZok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.cscreator.785;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/temp-4400/Desktop/ZikZok/ZikZok/LaunchViewController/ZikZok-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A42B870225457F22000FCEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				INFOPLIST_FILE = ZikZokTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PushNotificationTest.ZikZokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZikZok.app/ZikZok";
+			};
+			name = Debug;
+		};
+		A42B870325457F22000FCEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				INFOPLIST_FILE = ZikZokTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PushNotificationTest.ZikZokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZikZok.app/ZikZok";
+			};
+			name = Release;
+		};
+		A42B870525457F22000FCEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				INFOPLIST_FILE = ZikZokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PushNotificationTest.ZikZokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZikZok;
+			};
+			name = Debug;
+		};
+		A42B870625457F22000FCEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KLFVT2HV4;
+				INFOPLIST_FILE = ZikZokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PushNotificationTest.ZikZokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZikZok;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42B86CF25457F21000FCEC6 /* Build configuration list for PBXProject "ZikZok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B86FC25457F22000FCEC6 /* Debug */,
+				A42B86FD25457F22000FCEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B86FE25457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B86FF25457F22000FCEC6 /* Debug */,
+				A42B870025457F22000FCEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B870125457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B870225457F22000FCEC6 /* Debug */,
+				A42B870325457F22000FCEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B870425457F22000FCEC6 /* Build configuration list for PBXNativeTarget "ZikZokUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B870525457F22000FCEC6 /* Debug */,
+				A42B870625457F22000FCEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42B86CC25457F21000FCEC6 /* Project object */;
+}
