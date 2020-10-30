@@ -1,4 +1,0 @@
-framework module ZCCoreFramework {
-  header "ZCCoreFramework-Swift.h"
-  requires objc
-}
