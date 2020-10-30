@@ -26,7 +26,7 @@ class FeedFetcher: FeedFetchProtocol {
     init(networking: ConnectionProtocol.Type = Connection.self) {
         self.networking = networking
     }
-    
+       
     
     func fetchFeeds() {
        // fetchPrivateFeeds()
